@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PeerJS Chat App</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="https://unpkg.com/peerjs@1.4.7/dist/peerjs.min.js" defer></script>
+</head>
+
+<body>
+    <div id="chat">
+        <h2>PeerJS Chat App</h2>
+        <p>Your ID: <strong id="my-id">...</strong></p>
+
+        <div id="startup">
+            <button onclick="hostRoom()">Host Room</button>
+            <div id="rooms">
+            </div>
+            <button onclick="fetchRooms()">Fetch Rooms</button>
+        </div>
+
+        <div id="room" class="hidden">
+            <textarea id="messages" readonly></textarea>
+
+            <input type="text" id="message-input" placeholder="Type a message..."  
+                onkeydown="handleKeyPress(event)"
+                autofocus />
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <script src="app.js" defer></script>
+</body>
+
+</html>

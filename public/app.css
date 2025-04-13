@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    padding: 2rem;
+    text-align: center;
+}
+
+#chat {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 1rem;
+}
+
+input,
+button {
+    padding: 0.5rem;
+    margin: 0.25rem;
+    width: calc(100% - 1rem);
+}
+
+.message {
+    text-align: left;
+    margin: 0.25rem 0;
+}
+
+.mine {
+    color: green;
+}
+
+.theirs {
+    color: blue;
+}
+
+.hidden {
+    display: none;
+}
